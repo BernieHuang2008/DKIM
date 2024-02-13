@@ -14,6 +14,7 @@ def send_email():
     # Create a multipart message and set headers
     msg = MIMEMultipart()
     msg["From"] = "黄锦源<berniehuang@openteens.org>"
+    msg["Sender"] = "email@openteens.org"
     msg["To"] = "berniehuang2008<berniehuang2008@163.com>"
     msg["Subject"] = "测试dkim"
 
