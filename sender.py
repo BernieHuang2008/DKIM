@@ -10,6 +10,7 @@ import dkim
 def send_email():
     # use 163 mail as an example
     server = smtplib.SMTP("smtp.163.com", 25)
+    # server.login()
     # [TODO: Need login]
 
     # construct a email object
