@@ -32,7 +32,7 @@ def send_email():
             encryption_algorithm=serialization.NoEncryption()
         )
 
-    dkim.sign(msg.as_bytes(), b"testdkim", b"openteens.org", private_key)
+    dkim.sign(msg.as_bytes(), b"dkim", b"openteens.org", private_key)
 
     # send the email
     server.send_message(msg)
